@@ -1,0 +1,13 @@
+/* stylelint-disable media-feature-no-missing-punctuation, length-zero-no-unit */
+
+@mixin bp($width) {
+    @media all and (max-width: 0px + $width) {
+        @content;
+    }
+}
+
+@mixin minbp($width) {
+    @media all and (min-width: 0px + $width) {
+        @content;
+    }
+}

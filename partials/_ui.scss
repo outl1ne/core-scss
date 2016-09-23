@@ -1,0 +1,53 @@
+.view-ui {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ui-container {
+    padding: 25px;
+    background-color: darken($color-bg, 3%);
+    color: $color-fg;
+
+    &.ui-reversed {
+        background-color: darken($color-fg, 3%);
+        color: $color-bg;
+    }
+
+    &.ui-inline-children {
+
+        > * {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 5px 15px;
+        }
+    }
+}
+
+.ui-container.ui-icons {
+    background-color: rgb(107, 122, 148);
+
+    img {
+        margin: 5px;
+        max-width: 40%;
+        max-height: 205px;
+        vertical-align: middle;
+    }
+}
+
+.ui-title {
+    margin: 0;
+    padding: 15px;
+    background-color: #eee;
+    font-size: 2em;
+}
+
+.ui-header {
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.ui-center {
+    text-align: center;
+}

@@ -1,0 +1,27 @@
+&.media {
+    margin: 0;
+    overflow: visible;
+    @include clearfix;
+
+    > .left,
+    > .right {
+
+        img {
+            display: block;
+        }
+    }
+
+    > .left {
+        float: left;
+    }
+
+    > .right {
+        float: right;
+    }
+
+    > .body {
+        overflow: hidden;
+        _overflow: visible; // stylelint-disable-line indentation
+        zoom: 1;
+    }
+}

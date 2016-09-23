@@ -1,0 +1,9 @@
+$global-site-maxwidth: if(global_variable_exists(global-site-maxwidth), $global-site-maxwidth, 1200px);
+$global-site-side-padding: if(global_variable_exists(global-site-side-padding), $global-site-side-padding, 20px);
+$bp-tablet: if(global_variable_exists(bp-tablet), $bp-table, 991px);
+$bp-mobile: if(global_variable_exists(bp-mobile), $bp-mobile, 767px);
+$color-bg: if(global_variable_exists(color-bg), $color-bg, #fafafa);
+$color-fg: if(global_variable_exists(color-fg), $color-fg, #111);
+$body-font-size: if(global_variable_exists(body-font-size), $body-font-size, 16px);
+$font-body: if(global_variable_exists(font-body), $font-body, (Helvetica, Arial, sans-serif));
+$font-heading: if(global_variable_exists(font-heading), $font-heading, (Georgia, "Times New Roman", serif));

@@ -1,0 +1,22 @@
+&.flag {
+    display: table;
+    width: 100%;
+
+    > .left,
+    > .right,
+    > .body {
+        display: table-cell;
+        vertical-align: middle;
+
+        img {
+            display: block;
+            max-width: none;
+        }
+
+    }
+
+    > .body {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,7 @@
+@mixin body-font() {
+    font-family: $font-body, Helvetica, Arial, sans-serif;
+}
+
+@mixin heading-font() {
+    font-family: $font-heading, Helvetica, Arial, sans-serif;
+}

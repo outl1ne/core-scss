@@ -1,0 +1,23 @@
+html {
+    @include body-font;
+    background-color: $color-bg;
+    color: $color-fg;
+    font-size: $body-font-size;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+address {
+    font-style: normal;
+}
+
+/* IE10 fastclick */
+a,
+input,
+button {
+    -ms-touch-action: none !important;
+}
