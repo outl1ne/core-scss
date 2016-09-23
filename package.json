@@ -1,5 +1,5 @@
 {
-  "name": "core-scss",
+  "name": "@optimistdigital/core-scss",
   "version": "1.0.0",
   "description": "Optimist Digital core SCSS partials",
   "main": "_core.scss",
