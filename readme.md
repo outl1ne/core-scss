@@ -10,6 +10,22 @@ Add `@import "node_modules/@optimistdigital/core-scss/core";` before your compon
 
 ## Features
 
+#### Config
+
+We set some default variables that are used in core and that you can use in your code. You can override them by defining them yourself *before* including core.
+
+- `$global-site-maxwidth` - Used mainly for maxwidth-wrapper
+- `$global-site-side-padding` - Used mainly for maxwidth-wrapper
+- `$bp-tablet` - Min width (px) for tablets
+- `$bp-mobile` - Min width (px) for mobile devices
+- `$color-bg` - Main background color
+- `$color-fg` - Main foreground (text) color
+- `$body-font-size` - Main body size
+- `$font-body` - Main font for body text
+- `$font-heading` - Main font for headings
+
+#### Mixins
+
 The exact purpose of each mixin is explained in `_core.scss`. Other than the default styles, Here are the mixins that we provide:
 
 - `@mixin clearfix()`
