@@ -10,7 +10,7 @@ Add `@import "node_modules/@optimistdigital/core-scss/core";` before your compon
 
 ## Features
 
-#### Config
+### Config
 
 We set some default variables that are used in core and that you can use in your code. You can override them by defining them yourself *before* including core.
 
@@ -24,7 +24,7 @@ We set some default variables that are used in core and that you can use in your
 - `$font-body` - Main font for body text
 - `$font-heading` - Main font for headings
 
-#### Mixins
+### Mixins
 
 The exact purpose of each mixin is explained in `_core.scss`. Other than the default styles, Here are the mixins that we provide:
 
@@ -36,3 +36,19 @@ The exact purpose of each mixin is explained in `_core.scss`. Other than the def
 - `@mixin reset-list()`
 - `@mixin bp($width)`
 - `@mixin minbp($width)`
+
+### Grid layout
+
+We have helper classes for a basic grid (no gutters).
+
+Add `.cols-25` / `.cols-33` / `.cols-50` to add widths to your cols. Leave them out if you want to implement custom widths.
+
+Add `.with-breakpoints` if you want the grid items to fall back to 100% with at predetermined breakpoints. Leave that class out if you want to implement custom breakpoints. Example:
+
+```
+<div class="grid-layout cols-33 with-breakpoints">
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+</div>
+```
