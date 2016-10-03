@@ -1,0 +1,40 @@
+/**
+ * GRID
+ *
+ * Column sizes are determined by the parent class in percentages. i.e .grid.grid-50 results in 50% width columns.
+ * We use inline-block for this column system. Any child columns have their font size reset to $body-font-size
+ * `.with-breakpoints` adds responsive: 33% / 25% turns into 100% on tablet, and 50% turns into 100% on mobile.
+ */
+
+.grid-layout {
+    font-size: 0;
+
+    > .grid-item {
+        display: inline-block;
+        vertical-align: top;
+        font-size: $body-font-size;
+    }
+
+    &.cols-50 {
+
+        > .grid-item { width: percentage(1/2); }
+        &.with-breakpoints > .grid-item { @include bp($bp-mobile) { width: 100%; } }
+    }
+
+    &.cols-33 {
+
+        > .grid-item { width: percentage(1/3); }
+        &.with-breakpoints > .grid-item { @include bp($bp-tablet) { width: 100%; } }
+    }
+
+    &.cols-25 {
+
+        > .grid-item { width: percentage(1/4); }
+        &.with-breakpoints > .grid-item { @include bp($bp-tablet) { width: 100%; } }
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
