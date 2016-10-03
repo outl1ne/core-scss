@@ -3,6 +3,9 @@
   "version": "1.1.0",
   "description": "Optimist Digital core SCSS partials",
   "main": "_core.scss",
+  "scripts": {
+    "test": "stylelint \"**/*.scss\" --syntax scss; exit 0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/optimistdigital/core-scss.git"
@@ -14,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/optimistdigital/core-scss/issues"
   },
-  "homepage": "https://github.com/optimistdigital/core-scss#readme"
+  "homepage": "https://github.com/optimistdigital/core-scss#readme",
+  "devDependencies": {
+    "@optimistdigital/stylelint-config-rules": "^1.0.0",
+    "stylelint": "^7.3.1"
+  }
 }
