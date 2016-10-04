@@ -1,5 +1,7 @@
 @mixin maxwidth-wrapper {
     max-width: ($global-site-maxwidth + (2 * $global-site-side-padding) );
+    padding-left: $global-site-side-padding;
+    padding-right: $global-site-side-padding;
     margin: 0 auto;
     position: relative;
 }
